@@ -144,6 +144,7 @@ ul #menu, .menu, aside ul, aside li {
 }
 .second-screen .wrapper {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	align-content: space-between;
 }
@@ -605,7 +606,6 @@ aside img{
 	}
 	.second-screen .wrapper {
 		flex-direction: column;
-		left: 20%;
 		justify-content: center;
 	} 
 	.about-us {
