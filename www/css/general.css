@@ -1,0 +1,655 @@
+@charset "utf-8";
+html, body {
+	height: 100%;
+}
+body {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+p, h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-size: 36px;
+	margin-top: 20px;
+}
+h2 {
+	font-size: 20px;
+}
+a {
+	text-decoration: none;
+}
+
+
+.header {
+	color: #F3F1F5;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+.static {
+	width: 100%;
+	position: fixed;
+	height: 87px;
+	justify-content: center;
+	background: #463572;
+	z-index: 15;
+
+}
+.header a {
+	color: #F3F1F5;
+}
+.header p {
+	margin: 2px 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.top-info {
+	min-width: 140px;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 4%;
+}
+ul #menu, .menu, aside ul, aside li {
+	list-style:none;
+}
+#menu>li {
+	display:inline-block;
+ 	margin-left:0px;
+}
+#menu a {
+	display:table-cell;
+	vertical-align:middle; 
+	text-align:center; 
+	text-decoration:none; 
+	font-size: 22px;
+	padding: 30px 25px;
+}
+#menu a:hover {
+	background: #EEA914;
+}
+
+.top-menu {
+	width: 100%;
+	margin-top: -15px;
+	text-align: center;
+}
+.logo {
+	height: 85px;
+}
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.for-first-section {
+	margin-top: 80px;
+}
+.first-screen {
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	width: 100%;
+
+	margin-top: 100px;
+}
+.swiper-container {
+    width: 100%;
+    height: 30%;
+}
+.swiper-container img {
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.second-screen {
+	margin: 0;
+}
+.second-screen a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #F3F1F5;
+	background: #463572;
+	padding: 11px 34px;
+	border-radius: 10px;
+}
+.second-screen a:hover {
+	background: #EEA914;
+}
+.second-screen .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.printer {
+	height: 150px;
+	width: 350px;
+	display: flex;
+	margin-bottom: 30px;
+}
+.service {
+	height: 100%;
+	padding-right: 20px;
+}
+.service-text h2{
+	margin-top: 10px;
+	margin-bottom: 20%;
+}
+hr {
+	max-width: 1170px;
+	border: 2px solid #463572;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.about-us img {
+	width: 505px;
+	height: 320px;
+	margin-left: 40px;
+}
+.about-us .wrapper {
+	margin-bottom: 30px;
+}
+.parthners .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.parthners img {
+	height: 100px;
+	margin-bottom: 30px;
+}
+.contacts {
+	margin-bottom: 30px;
+}
+.contacts-width {
+	width: 40%;
+}
+.contacts h2 {
+	margin-bottom: 5px;
+}
+.contact p {
+	margin: 0;
+}
+.bank-info p {
+	margin: 0;
+}
+
+
+.wrapper-two-column {
+	display: flex;
+	justify-content: flex-start;
+}
+aside ul{
+	margin-left: -35px;
+	margin-top: -20px;
+}
+.into {
+	padding-left: 30px;
+}
+aside li {
+	padding: 5px 5px 5px 10px;
+}
+aside li:hover {
+	background: #EEA914;
+}
+aside {
+	width: 290px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-right: 20px;
+	position: fixed;
+}
+aside a{
+	color: #000;
+}
+aside a:hover {
+	background: #EEA914;
+} 
+/* Выбор*/
+#ServiceChange {
+	margin-top: 45px;
+	margin-left: 27%;	
+}
+#ServiceChange h1 {
+	margin-top: 0px;
+}
+/*image size = 832x250 px*/
+#ServiceChange img {
+	max-height: 250px;
+	width: 100%;
+}
+
+
+/* Липкий футер */
+footer {
+	flex: 0 0 auto;
+}
+.footer-glue {
+	flex: 1 0 auto;
+
+}
+
+/* Стили футера */
+footer {
+	height: 45px;
+	background: #463572;
+	width: 100%;
+
+}
+footer p {
+	margin: 0;
+	padding: 5px 0px 0px 0px;
+	color: #F3F1F5;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+}
+.footer-info {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+.footer-spread {
+	margin-right: 100px;
+}
+
+
+
+.burger {
+	display: none;
+}
+.burger-menu {
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 40px;
+	height: 30px;
+}
+.burger-logo {
+	display: none;
+	height: 85px;
+	margin-right: 10px;
+}
+
+.menu li{
+    float: left;
+}
+.menu li a{
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuToggle{
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+aside li>a {
+	display: block;
+}
+aside img{
+	margin-top: 35px;	
+	margin-right: 15px;
+	width: 25px;
+	height: 20px;
+}
+.service-burger{
+	display: none;
+}
+.service-burger>div{
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Большие девайсы (992px - 1170 px)*/
+@media (max-width: 1170px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.first-screen .container {
+
+	}
+	.footer-spread {
+		margin-right: 0px;
+	}
+	.footer-info {
+		display: flex;
+		justify-content: space-between;
+	}
+	.contacts-width {
+		padding-right: 15px;
+	}
+	aside {
+		width: 280px;
+	}
+}	
+@media (min-width: 992px) and (max-width: 1024px) {
+	.container {
+	 	width: 960px;
+	}
+	#menu a {
+		padding: 30px 15px;
+		font-size: 20px;
+	}
+	.second-screen .wrapper {
+		margin-left: 5%;
+		margin-right: 5%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	.contacts .wrapper {
+		display: block;
+	}
+	.contacts-width {
+		width: 100%;
+		display: flex;
+		margin-bottom: 15px;
+	} 
+	.contact {
+		width: 60%;
+		padding-left: 5%;
+	}
+	.bank-info {
+		width: 50%;
+	}
+	aside {
+		width: 235px;
+	}
+	aside ul {
+		margin-left: -50px;
+	}
+	aside h1 {
+		font-size: 30px;
+	}
+}
+
+/* Средние девайсы (768 - 991px)*/
+@media  (max-width: 991px) {
+	.container {
+		width: 720px;
+		margin: auto;
+		padding: 0;
+	}
+	header .container {
+		width: 95%;
+	}
+	.first-screen .container{
+		width: 100%;
+	}
+	footer .container {
+		width: 100%;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	h1 {
+		text-align: center;
+	}
+	.about-us .wrapper {
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+	.about-us img {
+		margin: 0 auto;
+	}
+	.second-screen .wrapper {
+		margin-left: 0;
+		margin-right: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	.printer {
+		width: 300px;
+	}
+	footer p {
+		font-size: 12px;
+	}
+	.footer-info {
+		width: 50%;
+	}
+	.copy {
+		width: 20%;
+	}
+	.footer-spread-time {
+		margin-right: 15px;
+	}
+	/*Управление бургером*/
+	    .top-menu {
+	    	display: none;
+	    }
+	    .menuToggle, .burger{
+	        display: block;
+	    }
+/* 	    .burger-menu {
+	margin: 0;
+	margin-left: 20px;
+} */
+	    .logo {
+	    	display: none;
+	    }
+	    .burger-logo {
+	    	display: block;
+	    }
+	    .menu {
+	        display: none;
+	        position: absolute;
+	        background: #463572;
+	        width: 50%;
+	        padding-left: 0;
+	        left: 0px;
+	    }
+	    .menu li>a {
+	    	display: block;
+	    }
+	    .menu a {
+	    	font-size: 22px;
+	    }
+	    .menu li{
+	        float: none;
+	        margin: 0;
+	        text-align: center;
+	    }
+	    .menu li:hover{
+			background: #EEA914;
+	    }
+	    .top-info {
+	    	display: flex;
+	    }
+	    .top-info p {
+	    	font-size: 20px;
+	    	margin: auto;
+	    	margin-right: 40px;
+	    }
+	
+
+	aside {
+		width: 100%;
+		position: relative;
+	}
+	.wrapper-two-column {
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	}
+	#ServiceChange {
+		width: 100%;
+		margin: 0;
+	}
+	.our-title {
+		display: none;
+	}
+
+	aside ul, aside li, aside a{
+		margin: 0;
+		padding: 5px;
+		color: #000;
+		text-align: center;
+	}
+	aside ul {
+		margin-top: -25px;
+	}
+	.service-menu li{
+    	float: none;
+	} 
+    .service-burger {
+		display: block;
+	}
+    .service-menu {
+        display: none;
+        position: absolute;
+        border: solid 2px #463572;
+        background: #fff;
+        width: 60%;
+        right: 20%;
+    }
+    .service-menu li>a {
+    	display: block;
+    }
+
+    .contacts .wrapper {
+		display: block;
+	}
+	.contacts-width {
+		width: 100%;
+		display: flex;
+		margin-bottom: 15px;
+	} 
+	.contact {
+		width: 60%;
+		padding-left: 5%;
+	}
+	.bank-info {
+		width: 50%;
+	}
+	.gallery {
+		margin-left: 45px;
+	}
+}
+
+/*#F3F1F5 - серо-фиолетово-белый
+#463572 - фиолетовый
+#EEA914 - оранжевый
+*/
+
+/* Малые девайсы (576-765px)*/
+ @media (max-width: 765px) {
+ 	body {
+ 		min-width: 600px;
+ 	}
+ 	iframe {
+ 		width: 95%;
+ 	}
+	.container {
+		width: 540px;
+		margin: 0 auto;
+	}
+	.first-screen .container {
+		margin-left: 8px;
+	}
+	.top-info p {
+	    font-size: 18px;
+	    margin: auto;
+	    margin-right: 40px;
+	}	
+	hr {
+		width: 102%;
+	}
+	.first-screen .container,
+	header .container,
+	footer .container {
+		width: 100%;
+	}
+ 	.printer {
+ 		width: auto;
+ 		margin-left: 15%;
+ 	}
+	.printer img {
+		width: 150px;
+		height: 150px;
+	}
+	.second-screen .wrapper {
+		flex-direction: column;
+		left: 20%;
+		justify-content: center;
+	} 
+	.about-us {
+		margin-left: 20px;
+	}
+	.contacts-width {
+		flex-direction: column;
+		width: 100%;
+	}
+	.contact {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	.bank-info {
+		width: 100%;
+		margin: 25px;
+	}
+	footer {
+		margin: 0;
+	}
+	footer p {
+		font-size: 12px;
+	}
+	.footer-info {
+		width: 80%;
+	}
+	.copy {
+		margin-right: 30px;
+	}
+	.footer-spread-time {
+		margin-right: 40px;
+	}
+	.gallery {
+		justify-content: center;
+	}
+
+}
+ @media (max-width: 575px) {
+ 	.container {
+ 		max-width: 100%;
+
+ 	}
+
+} 
+
+
